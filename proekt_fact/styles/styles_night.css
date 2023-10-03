@@ -1,0 +1,291 @@
+   /* Общие свойтсва */
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: rgb(17, 15, 15);
+}
+li>a {
+    text-decoration: none;
+    color: white;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+ul > li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+h3{
+    font-size: 30px;
+}
+p {
+    font-size: 16px;
+}
+a:hover {
+    color: blue;
+}
+        
+         /* Навигация */
+
+.menu_item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.item_list {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.header_list{
+    margin-right: 200px;
+}
+.button {
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    padding: 10px 10px
+    /* margin-left: 20px; */
+}
+  
+
+       /* Заголовок */
+.center {
+    text-align: center;
+    /* margin: 0 auto; */
+    margin-TOP: 200PX;
+    height: 300px;
+}
+
+.logo{
+    background-image: url(../img/BG.png);
+    width: 100%;
+    background-size: cover;
+}
+
+
+          /* main */
+
+
+.about{
+
+}          
+
+
+
+.content{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "img1 img2 img3   .      button     "
+        "img1 img2 about1  about2 about3"
+        ;
+    /* justify-content: space-around; */
+    justify-items:center;
+
+}
+.img1{
+    grid-area: img1;
+    /* background-image: url(/img/img-content/IMG1.png);
+    width: 100%;
+    background-size: cover;
+    height: 300px; */
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.about1{
+    grid-area: about1;
+}
+.about2{
+    grid-area: about2;
+}
+.about3{
+    grid-area: about3;
+}
+.button2{
+    grid-area:button;
+}
+
+
+
+
+.flex-container{
+    display: flex;
+    margin-top:100px;
+    justify-content: center;
+}
+
+
+
+
+
+    /*Раздел  main-about */
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+.about_name {
+    width: 50%;
+    font-size:16px;
+}
+
+
+           /*Раздел Оформление картинки */
+
+.container-img {
+
+    display: flex;
+    height: 370px;
+}
+.item {
+    /* width: 400px; */
+    /* height: 400px; */
+    background-size: contain;
+    background-repeat:no-repeat ;
+    flex: 1;
+}
+.img-1 {
+   background-image: url(../img/IMG1.png);
+}
+.img-2 {
+    background-image: url(../img/IMG2.png); 
+}
+.img-3 {
+    background-image: url(../img/IMG3.png); 
+}
+.img-4 {
+    background-image: url(../img/IMG4.png);   
+}
+
+        /* Раздел Блог */
+.header_blog {
+    text-align: center;
+}
+
+.container-blog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "blog-1  blog-2  blog-3"
+    ;
+    justify-items:center;
+    /* justify-content: center; */
+}
+.blog_1 {
+    grid-area: blog-1;
+}
+.blog_2 {
+
+    grid-area: blog-2;
+}
+.blog_3 {
+    grid-area: blog-3;
+}
+
+
+       /* Раздел  Newsletter */
+
+.container-Newsletter {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* margin: 100px; */
+    align-items:flex-end;
+}
+
+.Newsletter{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+
+
+
+.container-footer {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas:
+        "info info info info info info info  Iteria Iteria Iteria"
+        "icon icon  icon icon icon icon icon   paragr paragr paragr"
+    ;
+    grid-row-gap: 150px;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.info {
+    grid-area: info;
+    /* grid-column-start: 1;
+    grid-column-end: 6; */
+}
+
+.Iteria {
+    grid-area: Iteria;
+    text-align: center;
+    /* grid-column:6/11; */
+}
+
+.icon {
+    grid-area: icon;
+    /* grid-column: 1/6; */
+
+}
+
+.paragr {
+    grid-area: paragr;
+    /* grid-column:6/11 ; */
+}
+
+
+.flex-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* 
+             Copyright */
+.copyright-container {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.too {
+    /* width: 100px; */
+}
+
+.one {
+
+    /* flex: 1; */
+}
+
+
+
+
+
+
