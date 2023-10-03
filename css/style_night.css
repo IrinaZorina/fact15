@@ -97,7 +97,7 @@ p {
 /*section_one*/
 
 .section-one {
-    background-color: #000000;
+    background-color: #FF6347;
 }
 
 .section-one__wrapper {
@@ -198,6 +198,7 @@ p {
 .section-three {
     margin-top: 250px;
     display: grid;
+    background-color: #00FFFF;
 }
 
 .section-three__container {
@@ -234,7 +235,7 @@ p {
     justify-content: center;
     align-items: center;
     background-color: #191D1D;
- }
+}
 
 .section-four__item {
     color: #FFFFFF;
@@ -291,7 +292,7 @@ div > a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #262b2b;
+    background-color: #FF00FF;
 }
 .section-six__container {
     margin: auto;
@@ -310,7 +311,7 @@ div > a {
 
 .footer {
     display: grid;
-    background-color: #131616
+    background-color: #0000FF;
 }
 
 .footer__container {
