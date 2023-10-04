@@ -196,7 +196,7 @@ p {
 /*section_three*/
 
 .section-three {
-    margin-top: 250px;
+    padding-top: 250px;
     display: grid;
 }
 

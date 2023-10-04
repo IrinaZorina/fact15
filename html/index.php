@@ -9,7 +9,7 @@
     <?php
     $time = date("H:i:s");
 
-    if(($time >= 08.00) && ($time <= 20.00)) {
+    if($time >= 08.00 || $time <= 20.00) {
         echo '<link rel="stylesheet" href="../css/style_daylight.css">';
     }else {
         echo '<link rel="stylesheet" href="../css/style_night.css">';
