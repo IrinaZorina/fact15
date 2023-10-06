@@ -13,7 +13,7 @@
         echo '<link rel="stylesheet" href="styles/styles_daylight.css">';
     }else {
         echo '<link rel="stylesheet" href="styles/styles_nightlight.css">';
-    };
+    }
     ?>
 </head>
 <body>
