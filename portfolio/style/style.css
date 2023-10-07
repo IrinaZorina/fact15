@@ -1,0 +1,19 @@
+body{
+    background-color: #d8d8d6;
+}
+.content{
+    background-color: rgb(73, 73, 72);
+    color: #d8d8d6;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
