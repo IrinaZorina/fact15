@@ -61,3 +61,33 @@ $i = 0;
 for ($b = 0; $b <= 10-$i; $b++){
     echo $b;
 }
+echo '<br>';
+echo 'Example, задание №4';
+echo '<br>';
+$a = 1;
+$b = 1;
+$i = 0;
+$s = 0;
+$c = 3;
+while ($s <= 10){
+    $s = $s + $a/$b;
+    $a += $c;
+    $b += 1;
+    $i += 1;
+    $c += 2;
+}
+echo $i;
+echo '<br>';
+echo 'Example, задание №5';
+echo '<br>';
+$a = 1;
+$b = 2;
+$i = 0;
+$s = 0;
+while ($s <= 10){
+    $s = $s + $a/$b;
+    $a +=2;
+    $b +=2;
+    $i +=1;
+}
+echo $i;
