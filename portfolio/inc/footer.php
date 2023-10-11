@@ -1,4 +1,4 @@
-<footer>
+    <footer>
         <div class="container">
             <hr>
             <a href="#">На вверх</a>

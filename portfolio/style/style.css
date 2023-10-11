@@ -11,9 +11,19 @@ body{
     gap: 20px;
 
 }
-h1{
+.slogan{
     text-align: center;
 }
 h2{
     text-align: center;
+}
+.aboutTextAndImg{
+    display: flex;
+}
+.avotar{
+    margin-left: 110px;
+    width: 50%;
+}
+.about_Text{
+    margin-right: 10%;
 }

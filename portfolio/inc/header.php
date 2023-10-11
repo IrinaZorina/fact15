@@ -14,6 +14,7 @@
                     <div class="navbar-nav">
                         <div class="nav-link"> <a href="index.php">Главная страница</a></div>
                         <div class="nav-cycles"> <a href="content-cycles.php">Циклы</a></div>
+                        <div class="nav-arrays"> <a href="content-arrays.php">Массивы</a></div>
 
                     </div>
                 </div>
