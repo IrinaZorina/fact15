@@ -21,8 +21,13 @@
             <nav class="nav">
                 <div><a href="cycle.php" class="">Циклы</a> </div>
                 <div><a href="array.php" class="">Массивы</a> </div>
-                <div><a href="functions.html" class="">Функции</a> </div>
                 <div><a href="string.html" class="">Строки</a> </div>
+                <div><a href="functions.html" class="">Функции</a> </div>
+                <div><a href="#" class="">#</a> </div>
+                <div><a href="#" class="">#</a> </div>
+                <div><a href="#" class="">#</a> </div>
+                <div><a href="#" class="">#</a> </div>
+                <div><a href="#" class="">#</a> </div>
                 <div><a href="#" class="">#</a> </div>
             </nav>
         </div>
