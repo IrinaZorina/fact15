@@ -75,17 +75,78 @@
 
     <div class="wrapper">
         <h1>Слайд 24</h1>
-        <div class="wrapperOne">
-            <div  class="task">Задание 1</div>
+            <div class="wrapperOne">
+                <div  class="task">Задание 1</div>
+                <?php
+                $int_rand=mt_rand(10,1000);
+                $s = $int_rand;
 
-        </div>
+                $sum = 0;
+                while ($s > 0){
+                    $k = $s%10;
+                    $s = intdiv($s,10);
+                    if ($k%2==0) {
+                        $sum += $k;
+                    }
+                }
+                echo "Сумма четных цифр числа $int_rand = $sum<br>";
+                ?>
+            </div>
         <div class="wrapperTwo">
             <div  class="task">Задание 2</div>
-
+                <?php
+                $intOne=mt_rand(100,10000);
+                $intTwo = $intOne;
+                $text = "";
+                while ($intTwo > 0){
+                    $min = $intTwo%(10);
+                    $intThree = intdiv($intTwo,10);
+                    $i = 1;
+                    $count = 1;
+                    while ($intThree > 0) {
+                        $i++;
+                        $k = $intThree%(10);
+                        if ($k<$min) {
+                            $min = $k;
+                            $count = $i;
+                        }
+                        $intThree = intdiv($intThree,10);
+                    }
+                    $text = $text.$min;
+                    $remainder = $intTwo%(10**($count-1));
+                    $intTwo = intdiv($intTwo,(10**$count))*(10**($count-1))+$remainder;
+                }
+                echo "Из числа $intOne путем сортировки в порядке неубыванию получили : $text  <br>";
+                ?>
         </div>
         <div class="wrapperTree">
             <div  class="task">Задание 3</div>
-
+                <?php
+                $intOne=mt_rand(100,10000);
+                $intTwo = $intOne;
+                $text = "";
+                $x = 0;
+                $col = (int) log10($intOne)+1;
+                while (($intTwo > 0) || ($x<$col)){
+                    $max = $intTwo%(10);
+                    $intThree = intdiv($intTwo,10);
+                    $i = 1;
+                    $count = 1;
+                    while ($intThree > 0) {
+                        $i++;
+                        $k = $intThree%(10);
+                        if ($k>$max) {
+                            $max = $k;
+                            $count = $i;
+                        }
+                        $intThree = intdiv($intThree,10);
+                    }
+                    $text = $text.$max;
+                    $intTwo = intdiv($intTwo,(10**$count))*(10**($count-1))+$intTwo%(10**($count-1));
+                    $x++;
+                }
+                echo "Из числа $intOne путем сортировки в порядке невозрастания получили : $text  <br>";
+                ?>
         </div>
     </div>
 </div>
