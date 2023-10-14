@@ -8,6 +8,8 @@
 </head>
 <body>
     <header>
+        <?php session_start();?>
+
         <nav class="navbar-defaultmenu">
             <div class="container">
                 <div class="navbar-collapse">
@@ -15,6 +17,7 @@
                         <div class="nav-link"> <a href="index.php">Главная страница</a></div>
                         <div class="nav-cycles"> <a href="content-cycles.php">Циклы</a></div>
                         <div class="nav-arrays"> <a href="content-arrays.php">Массивы</a></div>
+                        <div class="nav-string"> <a href="content-string.php">Строки</a></div>
 
                     </div>
                 </div>

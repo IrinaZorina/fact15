@@ -39,36 +39,36 @@
         <h3>7.Дан двумерный массив из 5 строк и 6 столбцов. Определить для каждого четного столбца максимальный элемент. Найти произведение этих элементов.</h3>
         <?php                
             $journal = array();
-            $max_count = array();
-            $resultOfMultiplication = 1;
-            for($x=0;$x<6;$x++){
-                $max =-100;
-                $nameColumn = "column_№".strval($x+1);
-                for($y=0;$y<5;$y++){
-                    $temp = mt_rand(-100,100);
-                    $journal[$nameColumn][$y] = $temp;
-                    if (($x+1)%2==0){
-                        ($max<$temp)?$max=$temp:null;
-                    }
-                }
-                if (($x+1)%2==0){
-                    $max_count[$nameColumn]  = $max;
-                    $resultOfMultiplication*=$max;
+            for($x=0;$x<5;$x++){
+                for($y=0;$y<6;$y++){
+                    $journal[$x][$y] = mt_rand(-100,100);
                 }
             }
-            
-            echo "<pre>";
-            print_r($journal);
 
-            print_r($max_count);
+            $arrMax = $journal[0];
+            echo"<table>";
+            foreach($journal as $ValCol){
+                echo"<tr>";
+                foreach($ValCol as $k => $ValRow){
+                    echo "<td align=right width='50'>".$ValRow."</td>";
+                    $arrMax[$k] = ($arrMax[$k]<$ValRow)?$ValRow:$arrMax[$k];
+                }
+            echo "</tr>";
+            }
+
+            echo"<tr>";
+            $resultOfMultiplication = 1;
+            foreach($arrMax as $key => $value){
+                echo "<td align=right width='50'>";
+                if(($key-1)%2==0){
+                    echo $value;
+                    $resultOfMultiplication*=$value;
+                }
+                echo "</td>";
+            }
+            echo "</tr></table>";
             echo "Произведение максимальных значений четных столбцов = $resultOfMultiplication";
-            echo "</pre>";
         ?>   
-
-        <!-- <h3>3. Число  Пи  вычисляется  по  формуле  Грегори  следующим образом:  РI=4(1-1/3+1/5-1/7+1/9-...), причем, чем больше слагаемых в скобках, тем выше точность вычисления числа Пи. Определить минимальное количество слагаемых для вычисления Пи с точностью 0.01</h3>     -->
-        <?php 
-        ?>    
-
 
     </div>
 </div>
