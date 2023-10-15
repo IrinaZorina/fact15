@@ -187,9 +187,76 @@ input {
   margin-bottom: 5px;
 }
 .ciclo {
-    display: flex;
-    width: 1920px;
+  display: flex;
+  width: 1920px;
 }
 .ciclo-two {
   padding-left: 20px;
+}
+.ciclo-three {
+  padding-left: 20px;
+}
+.array {
+  display: flex;
+  width: 1920px;
+}
+.array-two {
+  padding-left: 20px;
+}
+.aboutcourse {
+  margin-top: 20px;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
+}
+.aboutme-text {
+  margin-top: 100px;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
+}
+.numStr {
+  margin-top: 50px;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
+}
+.aboutcourse h1 {
+  margin-bottom: 20px;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
+}
+.aboutme-text h1 {
+  margin-bottom: 20px;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
+}
+.date {
+  margin-top: 20px;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
 }
