@@ -13,6 +13,8 @@
     <div class="nav">
         <ul class="nav__menubar">
             <li class="cycle"><a href="cycles.php">ЦИКЛЫ</a> </li>
+            <li class="cycle"><a href="arrays.php">МАССИВЫ</a> </li>
+            <li class="cycle"><a href="lines.php">СТРОКИ</a> </li>
         </ul>
     </div>
 </header>
