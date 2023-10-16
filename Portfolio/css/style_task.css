@@ -24,12 +24,14 @@ body {
     margin-right: 100px;
 }
 
+.wrapperOne > div {
+    white-space: nowrap;
+}
+
 .title {
     margin: 0 50px 0 0;
 }
 
 .task {
-    white-space: nowrap;
-    white-space: nowrap;
     white-space: nowrap;
 }

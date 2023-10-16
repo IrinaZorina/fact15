@@ -149,6 +149,37 @@
                 ?>
         </div>
     </div>
+
+    <!--    //______!!!_______\\    -->
+
+    <div class="wrapper">
+        <h1>Слайд 25</h1>
+        <div class="wrapperOne">
+            <div  class="task">Задание 1</div>
+            <?php
+                for ($i=5; $i<=13; $i++){
+                    echo $i."<br>";
+                };
+            ?>
+        </div>
+        <div class="wrapperTwo">
+            <div  class="task">Задание 2</div>
+            <?php
+                $num = 1000;
+
+                for($i=0; $num > 50; $i++){
+                    $num = $num/2;
+                }
+                echo "При делении 1000 на 2 за $i итераций получим ".$num." < 50";
+                ?>
+        </div>
+        <div class="wrapperTree">
+            <div  class="task">Задание 3</div>
+            <?php
+
+            ?>
+        </div>
+    </div>
 </div>
 
 </body>
