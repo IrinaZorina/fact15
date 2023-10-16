@@ -28,6 +28,7 @@ p,li{
     font-family: 'Nunito Sans', sans-serif;
     line-height:1.5;
 }
+
 li{
     margin: 10px;
 }
@@ -38,6 +39,7 @@ a {
 }
 a:hover{
     color:red;
+
 }
     /* header */
 

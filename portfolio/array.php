@@ -1,4 +1,4 @@
-<?php require_once 'header/header.php' ?>
+<?php require_once 'inc/header.php' ?>
 <main class="page-main">
     <strong>
         <p>Слайд №15</p>
@@ -178,4 +178,4 @@ foreach ($arr as $key => $value) {
 
 </main>
 
-<?php require_once 'footer/footer.php' ?>
+<?php require_once 'inc/footer.php' ?>

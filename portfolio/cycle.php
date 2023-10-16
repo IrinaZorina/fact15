@@ -1,4 +1,4 @@
-<?php require_once 'header/header.php' ?>
+<?php require_once 'inc/header.php' ?>
 
 <main class="page-main">
     <p><strong>Слайд №23</strong></p>
@@ -110,4 +110,4 @@
     <br>
 </main>
 
-<?php require_once 'footer/footer.php' ?>
+<?php require_once 'inc/footer.php' ?>
