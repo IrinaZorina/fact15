@@ -1,3 +1,14 @@
+<?php
+    function timeOfDayStyle(){
+        $time = date("H");
+        if ($time > 8 && $time < 20) {
+            return "Lightstyles.css";
+        } else {
+            return "styles.css";
+        }
+    }    
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,15 +16,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Первая верстка</title>
-    <?php
-        $time = date("H");
-        if ($time > 8 && $time < 20) {
-            $img="Lightstyles.css";
-            } else {
-            $img="styles.css";
-        }
-    ?>
-    <link rel="stylesheet" href="css/<?php echo $img ?>">
+    <link rel="stylesheet" href="css/<?php echo timeOfDayStyle() ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Nunito&display=swap" rel="stylesheet">   
