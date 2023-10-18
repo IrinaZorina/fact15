@@ -135,19 +135,38 @@
     <div class="wrapper">
         <h1>Слайд 17</h1>
         <div class="wrapperOne">
-            <div  class="task">Задание 1</div>
+            <div  class="task">Задание 3</div>
             <?php
+                function reverseOrderLetters($string)
+                {
+                    $strrev = "";
 
+                    for($i = mb_strlen($string, "UTF-8"); $i >= 0; $i--) {
+                        $strrev .= mb_substr($string, $i, 1, "UTF-8");
+                    }
+
+                    return $strrev;
+                };
+
+                $string = 'HTML, CSS, PHP, BITRIX';
+
+                echo reverseOrderLetters($string);
             ?>
         </div>
         <div class="wrapperTwo">
-            <div  class="task">Задание 2</div>
+            <div  class="task">Задание 4</div>
             <?php
+                function lenghtSting ($str) {
+                    return strlen($str);
+                }
 
-                ?>
+                $str = 'HTML, CSS, PHP, BITRIX';
+
+                echo lenghtSting($str);
+            ?>
         </div>
         <div class="wrapperTree">
-            <div  class="task">Задание 3</div>
+            <div  class="task">Задание 5</div>
             <?php
 
             ?>

@@ -7,13 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <?php
-    $time = date("H:i:s");
+        function dayNight ()
+        {
 
-    if($time >= 08.00 || $time <= 20.00) {
-        echo '<link rel="stylesheet" href="../css/style_daylight.css">';
-    }else {
-        echo '<link rel="stylesheet" href="../css/style_night.css">';
-    };
+            $time = date("H:i:s");
+
+            if ($time >= 08.00 || $time <= 20.00) {
+                echo '<link rel="stylesheet" href="../css/style_daylight.css">';
+            } else {
+                echo '<link rel="stylesheet" href="../css/style_night.css">';
+            };
+        };
+
+        dayNight();
     ?>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
