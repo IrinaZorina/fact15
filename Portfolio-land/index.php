@@ -30,7 +30,11 @@
               <img src="/img/array.jpg" alt="image" class="img-main">
             </a>
           </div>
-          <div class="four-block"></div>
+          <div class="four-block">
+          <a href="/assets/string.php">
+              <img src="/img/string.png" alt="image" class="img-main">
+            </a>
+          </div>
         </div>
       </div>
     </main>
