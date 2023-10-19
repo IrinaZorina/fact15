@@ -125,7 +125,7 @@
                   print_r($tempMax);
               ?>
           </div>
-          <div class="ciclo-thre"></div>
+          <div class="ciclo-three"></div>
           <div class="ciclo-four"></div>
           <div class="ciclo-five"></div>
         </div>

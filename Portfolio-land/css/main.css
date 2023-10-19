@@ -188,7 +188,14 @@ input {
 }
 .ciclo {
   display: flex;
-  width: 1920px;
+  width: 1140px;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
 }
 .ciclo-two {
   padding-left: 20px;
@@ -198,7 +205,14 @@ input {
 }
 .array {
   display: flex;
-  width: 1920px;
+  width: 1140px;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
 }
 .array-two {
   padding-left: 20px;
@@ -259,4 +273,27 @@ input {
   font-weight: 200;
   line-height: normal;
   letter-spacing: 0.1em;
+}
+.string {
+  display: flex;
+  width: 1140px;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
+}
+.string-two {
+  padding-left: 20px;
+}
+.string-three {
+  padding-left: 20px;
+}
+.string-four {
+  padding-left: 20px;
+}
+.string-five {
+  padding-left: 20px;
 }

@@ -13,7 +13,7 @@
               <a href="/assets/array.php">array</a>
             </li>
             <li class="menu-item">
-              <a href="#">#</a>
+              <a href="/assets/string.php">String</a>
             </li>
             <li class="menu-item">
               <a href="#">#</a>
