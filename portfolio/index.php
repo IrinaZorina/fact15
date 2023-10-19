@@ -1,4 +1,7 @@
+<? require_once 'inc/globalFunction.php' ?>
 <?php require_once 'inc/header.php' ?>
+
+
 <main>
     <div class="name">
         <h1>Шахрай Александр</h1>
@@ -12,9 +15,7 @@
                 <?
                 // Текст первой фразы окрасить в произвольный цвет
                 $about_me = 'Всем привет. Меня зовут Александр. Мне 31 год.';
-                $arr_about_me = explode('. ', $about_me);
-                // print_r($arr_about_me);
-                echo str_replace($arr_about_me[0], "<span style='color:blue'>  $arr_about_me[0]  </span>", $about_me);
+                about_me($about_me);
                 ?>
             </p>
             <i>
@@ -48,15 +49,7 @@
                 количество учащихся, что позволит проработать индивидуально ошибки. Понравился формат обучения и
                 внимательность преподавателя к каждому человеку, заставляет включаться в процесс. Надеюсь, что и
                 последующие уроки будут проходить для меня комфортно, а материал усваиваться легко и быстро. <strong>P.S Тяжело даются математические задачи.</strong>';
-                $arr_feedback_me = explode(' ', $feedback_me);
-                // print_r($arr_feedback_me);
-                foreach ($arr_feedback_me as $key => $value) {
-                    if ($key % 2 == 0) {
-                        echo "<span style='color:#A018FF'> $value </span>" . ' ';
-                    } else {
-                        echo "<span style='color:green'> $value </span>" . ' ';
-                    }
-                }
+                feedback_me($feedback_me);
                 ?>
             </p>
         </div>
@@ -92,5 +85,4 @@
             </div>
         </div>
     </section>
-
     <?php require_once 'inc/footer.php' ?>
