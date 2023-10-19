@@ -1,14 +1,19 @@
 <?php
 echo 'Слайд 23, задача 1';
 echo '<br>';
+echo 'Слайд 23, задача 1';
+echo '<br>';
 echo 'Дана строка. Если в этой строке более 5-ти символов - вырежьте из нее первые 5 символов, добавьте троеточие в конец и выведите на экран. Если же в этой строке 5 и менее символов - необходимо вывести эту строку на экран';
 echo '<br>';
 $str = 'words.TGFH.545-numbers.';
 $len = mb_strlen($str);
-//echo $len;
-if( $len > 5){
-    echo substr($str, 0 , 5);
-}else echo "$str";
+
+if ($len > 5) {
+    $newStr = mb_substr($str, 5) . '...';
+    echo $newStr;
+} else {
+    echo $str;
+}
 echo '<br>';
 
 echo '<br>';

@@ -87,6 +87,16 @@ for ($i = 0; $i < 5; $i++) {
         $array[$i][$j] = rand(1, 100);
     }
 }
+echo '<pre>';
+echo 'Исходный массив:';
+echo '<br>';
+for ($i = 0; $i < 5; $i++) {
+    for ($j = 0; $j < 6; $j++) {
+        echo $array[$i][$j] . ' ';
+    }
+    echo '<br>';
+}
+echo '</pre>';
 $product = 1;
 for ($j = 0; $j < 6; $j += 2) {
     $max = $array[0][$j];
