@@ -35,6 +35,11 @@
               <img src="/img/string.png" alt="image" class="img-main">
             </a>
           </div>
+          <div class="five-block">
+          <a href="/assets/get_post.php">
+              <img src="/img/get-post.png" alt="image" class="img-main">
+            </a>
+          </div>
         </div>
       </div>
     </main>

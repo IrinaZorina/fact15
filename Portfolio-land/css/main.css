@@ -297,3 +297,100 @@ input {
 .string-five {
   padding-left: 20px;
 }
+.regClient {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  margin-left: 20px;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
+}
+.reg_good {
+  margin: 0 auto;
+  margin-left: 500px;
+  text-align: center;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
+}
+.form4 {
+  margin-left: 500px;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
+}
+button {
+  margin-top: 20px;
+  border: 1px solid white;
+  text-align: center;
+}
+.imgTask4 {
+  margin-left: 500px;
+}
+.form3 {
+  margin-left: 500px;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
+}
+input {
+  background-color: #e4f1ff;
+  color: black;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
+}
+.task4Error {
+  margin-left: 500px;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
+}
+.get_post {
+  display: flex;
+  width: 1140px;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
+}
+.get_post-two {
+  padding-left: 20px;
+}
+.get_post-three {
+  padding-left: 20px;
+}
+.get_post-four {
+  padding-left: 20px;
+}
+.get_post-five {
+  padding-left: 20px;
+}
