@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style_task.css">
+    <link rel="stylesheet" href="css/style_tas.css">
 </head>
 <body>
 <div class="main-container">
@@ -168,6 +168,13 @@
         <div class="wrapperTree">
             <div  class="task">Задание 5</div>
             <?php
+                function outputtingLetterNewLine ($str){
+                    echo nl2br($str, true);
+                }
+
+                $str = "HTML,\r\n CSS,\r\n PHP,\r\n BITRIX";
+
+                outputtingLetterNewLine($str);
 
             ?>
         </div>

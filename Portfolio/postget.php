@@ -6,11 +6,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style_task.css">
+    <link rel="stylesheet" href="css/style_tas.css">
 </head>
 <body>
 <div class="main-container ">
-    <div class="wrapper">
+    <div class="wrapper postget">
         <h1>Слайд 15</h1>
         <div class="wrapperOne">
             <div>Задание 1</div>
@@ -72,7 +72,7 @@
                 $login = 'admin';
                 $pass = 1;
 
-                if ($_POST['login'] == $login && $_POST['password'] == $pass) {
+                if ($_POST['login'] === $login && $_POST['password'] === $hash_pass) {
                     echo "Доступ к секретным страницам открыт!";
                 } else {
                     echo 'Данные не верны!';
@@ -81,9 +81,15 @@
         </div>
         <div class="wrapperTree">
             <div>Задание 4</div>
-            <?
-
-            ?>
+                <form method="get">
+                    <select name="I">
+                        <option value="1">Лаб1</option>
+                        <option value="2">Лаб2</option>
+                        <option value="3">Лаб3</option>
+                        <option value="4">Лаб4</option>
+                    </select>
+                    <input type="submit" value="Отправить">
+                </form>
         </div>
     </div>
 </div>

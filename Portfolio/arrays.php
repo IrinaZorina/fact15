@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style_task.css">
+    <link rel="stylesheet" href="css/style_tas.css">
 </head>
 <body>
 <div class="main-container ">
@@ -129,6 +129,22 @@
         <div>Задание 7</div>
 
     </div>
+</div>
+<div class="wrapper">
+    <h1>Слайд 17</h1>
+    <div class="wrapperOne">
+        <div>Задание 8</div>
+        <?php
+
+        ?>
+    </div>
+    <div class="wrapperTwo">
+        <div>Задание 9</div>
+        <?
+
+        ?>
+    </div>
+
 </div>
 
 </body>
