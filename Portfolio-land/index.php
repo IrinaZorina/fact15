@@ -1,3 +1,10 @@
+<?php
+if (isset($_COOKIE['Page'])?$_COOKIE['Page']:'');
+setcookie('Page', $_SERVER['PHP_SELF'], time()+3600);
+session_start();
+session_unset();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,14 +23,14 @@
       <div class="container">
         <div class="block">
           <div class="one-block">
-          <a href="assets/portfolio.php">
-            <img src="img/portfolio.png" alt="image" class="img-main">
-          </a>
+            <a href="assets/portfolio.php">
+              <img src="img/portfolio.png" alt="image" class="img-main">
+            </a>
           </div>
           <div class="two-block">
-          <a href="assets/ciclo.php">
-            <img src="img/ciclo.png" alt="image" class="img-main">
-          </a>
+            <a href="assets/ciclo.php">
+              <img src="img/ciclo.png" alt="image" class="img-main">
+            </a>
           </div>
           <div class="three-block">
             <a href="/assets/array.php">
@@ -31,15 +38,20 @@
             </a>
           </div>
           <div class="four-block">
-          <a href="/assets/string.php">
-              <img src="/img/string.png" alt="image" class="img-main">
+            <a href="/assets/string.php">
+                <img src="/img/string.png" alt="image" class="img-main">
             </a>
           </div>
           <div class="five-block">
-          <a href="/assets/get_post.php">
-              <img src="/img/get-post.png" alt="image" class="img-main">
+            <a href="/assets/get_post.php">
+                <img src="/img/get-post.png" alt="image" class="img-main">
             </a>
           </div>
+        </div>
+        <div class="six-block">
+          <a href="/assets/colorPage.php">
+              <img src="/img/color.png" alt="image" class="img-main">
+          </a>
         </div>
       </div>
     </main>

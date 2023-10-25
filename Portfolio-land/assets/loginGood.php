@@ -15,6 +15,7 @@
     <main id="main" class="main">
       <div class="container">
         <strong class="reg_good">Вы успешно вошли!</strong>
+        <p class="lastPage">Последняя страница, которую вы посетили: <?php echo $_COOKIE['Page']?></p>
       </div>
     </main>
 

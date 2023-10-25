@@ -19,7 +19,7 @@
               <a href="/assets/get_post.php">GET/POST</a>
             </li>
             <li class="menu-item">
-              <a href="#">#</a>
+              <a href="/assets/colorPage.php">ColorPage</a>
             </li>
             <li class="menu-item">
               <a href="#">#</a>

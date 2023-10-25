@@ -1,3 +1,9 @@
+<?php
+if (isset($_COOKIE['Page'])?$_COOKIE['Page']:'');
+setcookie('Page', $_SERVER['PHP_SELF'], time()+3600);
+session_start();
+session_unset();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

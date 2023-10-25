@@ -76,8 +76,8 @@ input {
   width: 1140px;
   height: 39px;
   flex-shrink: 0;
-  margin-left: 390px;
-  margin-right: 390px;
+  margin-left: 290px;
+  margin-right: 290px;
 }
 
 .header__container__nav {
@@ -111,6 +111,12 @@ input {
   display: flex;
   justify-content: space-evenly;
 }
+
+.six-block {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
 .img-main {
   width: 200px;
   height: 200px;
@@ -419,4 +425,17 @@ input {
 }
 .form3_2 p {
   margin: 10px;
+}
+.lastPage {
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-left: 100px;
+  text-align: center;
+  color: #e4f1ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.1em;
 }
