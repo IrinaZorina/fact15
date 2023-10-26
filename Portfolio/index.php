@@ -1,4 +1,4 @@
-<?
+<?php
 function firstSentence($text)
 {
     $pos = mb_strlen($text) - 1;
@@ -144,7 +144,10 @@ function numberDaysBetweenDates (){
                 <a href="functions.php" class="my-work-experience-period">Функции
                     <spam class="my-work-experience-divider">|</spam>
                 </a>
-                <a href="postget.php" class="my-work-experience-period">Post get запросы
+                <a href="postget.php" class="my-work-experience-period">Pos, get запросы
+                    <spam class="my-work-experience-divider">|</spam>
+                </a>
+                <a href="cookie-session.php" class="my-work-experience-period">Cookie, session
                     <spam class="my-work-experience-divider">|</spam>
                 </a>
                 <ul class="my-work-experience-duties">
@@ -152,22 +155,23 @@ function numberDaysBetweenDates (){
                         камандный проект); при разработке используется адаптивность.
                     </li>
                 </ul>
+                <h1><a href="handler_authorization.php">Авторизация</a></h1></h1>
                 <div>
                     <p>
-                        <?
+                        <?php
                         $about_my = 'Привет! Меня зовут Алексей. Изучать программирвоание начал 2 года назад. Первые шаги начались с верстки, javascript, фрейворка react.';
                         echo firstSentence($about_my);
                         ?>
                     </p>
                     <p>
-                        <?
+                        <?php
                         $hobby = 'В этом году начала интересовать языком программирвоания php. Узнал что существует фрейморк
                         bitrix.';
                         echo $hobby;
                         ?>
                     </p>
                     <p>
-                        <?
+                        <?php
                         $string = 'Записался на обучение bitrix и php в компанию Факт Академия. Курс в компании заинтерсовал своими
                         регулярными живывми вебинарами, возможностью на прямую общаться с преподователем. Занятия
                         проходят системно, материал интерсный, преподователи сложнй материал объясняю несколько раз.';
@@ -176,7 +180,7 @@ function numberDaysBetweenDates (){
                     </p>
                     <div>Статистика по странице</div>
                     <div>
-                        <?
+                        <?php
                         echo '<br/>';
                         echo numberVowelLetters([$about_my, $hobby, $string]);
                         echo '<br/>';

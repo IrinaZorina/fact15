@@ -6,15 +6,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style_tas.css">
+    <link rel="stylesheet" href="css/style_task.css">
 </head>
 <body>
 <div class="main-container ">
     <div class="wrapper postget">
         <h1>Слайд 15</h1>
         <div class="wrapperOne">
-            <div>Задание 1</div>
-            <?
+            <div class="task">Задание 1</div>
+            <?php
             print_r('Вывод input: ' . $_GET['input']);
             echo '<br>';
             echo 'Вывод textarea: ' . $_GET['textarea'];
@@ -47,7 +47,7 @@
 
         </div>
         <div class="wrapperTwo">
-            <div>Задание 2</div>
+            <div class="task">Задание 2</div>
             <?php
             echo '<br>';
             print_r($_POST['login']);
@@ -60,19 +60,19 @@
             print_r($_POST['password']);
             ?>
 
-            <form method="post">
+            <form method="POST">
                 Login: <input type="text" name="login">
                 Password: <input type="password" name="password">
                 Отправить: <input type="submit" name="submit" value="Отправить">
             </form>
         </div>
         <div class="wrapperTree">
-            <div>Задание 3</div>
-            <?
+            <div class="task">Задание 3</div>
+            <?php
                 $login = 'admin';
-                $pass = 1;
+                $pass = '1';
 
-                if ($_POST['login'] === $login && $_POST['password'] === $hash_pass) {
+                if ($_POST['login'] == $login && $_POST['password'] === $hash_pass) {
                     echo "Доступ к секретным страницам открыт!";
                 } else {
                     echo 'Данные не верны!';
@@ -80,7 +80,7 @@
             ?>
         </div>
         <div class="wrapperTree">
-            <div>Задание 4</div>
+            <div class="task">Задание 4</div>
                 <form method="get">
                     <select name="I">
                         <option value="1">Лаб1</option>
