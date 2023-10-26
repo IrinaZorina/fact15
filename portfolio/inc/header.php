@@ -29,8 +29,8 @@
                 <div><a href="array.php" target="_blank" class="">Массивы</a> </div>
                 <div><a href="string.php" target="_blank" class="">Строки</a> </div>
                 <div><a href="function.php" target="_blank" class="">Функции</a> </div>
-                <div><a href="#" target="_blank" class="">#</a> </div>
-                <div><a href="#" target="_blank" class="">#</a> </div>
+                <div><a href="get_post.php" target="_blank" class="">GET||POST</a> </div>
+                <div><a href="Registration" target="_blank" class="">Регистрация</a> </div>
                 <div><a href="#" target="_blank" class="">#</a> </div>
 
             </nav>
