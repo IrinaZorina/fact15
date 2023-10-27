@@ -150,6 +150,9 @@ function numberDaysBetweenDates (){
                 <a href="cookie-session.php" class="my-work-experience-period">Cookie, session
                     <spam class="my-work-experience-divider">|</spam>
                 </a>
+                <a href="working_files.php" class="my-work-experience-period">Работа с файлами
+                    <spam class="my-work-experience-divider">|</spam>
+                </a>
                 <ul class="my-work-experience-duties">
                     <li class="my-work-experience-duty">Семантически, валидная верска двух проектов (один личный и один
                         камандный проект); при разработке используется адаптивность.

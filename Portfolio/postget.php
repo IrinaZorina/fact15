@@ -92,6 +92,40 @@
                 </form>
         </div>
     </div>
+
+    <div class="wrapper postget">
+        <h1>Слайд 16</h1>
+        <div class="wrapperOne">
+            <div class="task">Задание 1</div>
+            <form method="POST">
+                <p>Логин:<input type="text" name="login"></p>
+                <p>Комментарии:<input type="text" name="comments"></p>
+                <input type="submit">
+            </form>
+            <?php
+            $login = $_POST['login'];
+            $comments = $_POST['comments'];
+
+            $to = '\OpenServer\userdata\temp\email';
+            $subject = "Test";
+            $message = 'Login ' . htmlspecialchars($login) . ' ' . 'Comments ' . htmlspecialchars($comments);
+            $headers = "From Test";
+            mail($to, $subject, $message, $headers);
+            ?>
+        </div>
+        <div class="wrapperTwo">
+            <div class="task">Задание 2</div>
+            <form method="POST">
+                <p>Логин:<input type="text" name="login"></p>
+                <p>Пароль:<input type="text" name="password"></p>
+                <input type="submit">
+            </form>
+        </div>
+        <div class="wrapperTree">
+            <div class="task">Задание 3</div>
+
+        </div>
+    </div>
 </div>
 
 </body>
