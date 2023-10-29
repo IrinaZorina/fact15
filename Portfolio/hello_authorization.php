@@ -2,6 +2,5 @@
 session_start();
 
 echo 'Приветствую, ' . $_SESSION['login'] . '!';
-
-//var_dump($_SESSION['login']);
-//exit();
+echo '<br>';
+echo (isset($_COOKIE['lastPage'])) ? 'В прошлый раз вы посещали страницу ' . $_COOKIE['lastPage'] : '';

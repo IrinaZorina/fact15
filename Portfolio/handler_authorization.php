@@ -15,6 +15,22 @@ if($_SESSION['login'] === $login && $_SESSION['password'] === $pass_hash){
     echo 'Введите login и password';
 }
 
+//Задание 2
+
+$page = '';
+switch ($_SERVER['PHP_SELF']) {
+    case '/Portfolio/fact.php':
+        $page = 'fact';
+        break;
+    case '/Portfolio/bitrix.php':
+        $page = 'bitrix';
+        break;
+}
+
+if ($page != '') {
+    setcookie('lastPage', $page, time() + 3600 * 24);
+}
+
 ?>
 
 <!doctype html>
@@ -32,5 +48,8 @@ if($_SESSION['login'] === $login && $_SESSION['password'] === $pass_hash){
         <p>Password: <input type="password" name="password"></p>
         <input type="submit">
     </form>
+    <a href="bitrix.php">Bitrix Page</a>
+    <?= '<br>'?>
+    <a href="fact.php">Fact Page</a>
 </body>
 </html>

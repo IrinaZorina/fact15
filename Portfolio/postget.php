@@ -120,6 +120,11 @@
                 <p>Пароль:<input type="text" name="password"></p>
                 <input type="submit">
             </form>
+            <?php
+            $password = $_POST['password'];
+            $hash_pass1 = md5($password);
+
+            ?>
         </div>
         <div class="wrapperTree">
             <div class="task">Задание 3</div>

@@ -4,11 +4,11 @@ $_SESSION['task_session'] = isset($_GET['task_session']) ? $_GET['task_session']
 
 $_SESSION['task_session_time'] = date("Y-m-d H:i:s");
 
-$name = isset($_GET['name'])? $_GET['name'] : '';
-setcookie('name', $name, time()+3600);
-setcookie('time', date("Y-m-d H:i:s"), time()+3600);
-$count = isset($_COOKIE['count'])?++$_COOKIE['count']:0;
-setcookie('count', $count, time()+3600);
+$name = isset($_GET['name']) ? $_GET['name'] : '';
+setcookie('name', $name, time() + 3600);
+setcookie('time', date("Y-m-d H:i:s"), time() + 3600);
+$count = isset($_COOKIE['count']) ? ++$_COOKIE['count'] : 0;
+setcookie('count', $count, time() + 3600);
 ?>
 
 <!doctype html>
@@ -29,10 +29,10 @@ setcookie('count', $count, time()+3600);
             <div class="wrapperOne">
                 <div class="task">Задание 1</div>
                 <form method="GET">
-                    <input type="text" name="name" value="<?= isset($_GET['name']) ? $_GET['name'] : ''?>">
+                    <input type="text" name="name" value="<?= isset($_GET['name']) ? $_GET['name'] : '' ?>">
                     <input type="submit">
                 </form>
-                <div>Hello <?= $_COOKIE['name']?></div>
+                <div>Hello <?= $_COOKIE['name'] ?></div>
             </div>
             <div class="wrapperTwo">
                 <div class="task">Задание 2</div>
@@ -40,12 +40,12 @@ setcookie('count', $count, time()+3600);
                     <input type="text" name="time">
                 </form>
                 <?=
-                    "Время входа: " . isset($_COOKIE['time'])?$_COOKIE['time']:'';
+                "Время входа: " . isset($_COOKIE['time']) ? $_COOKIE['time'] : '';
                 ?>
             </div>
             <div class="wrapperTree">
                 <div class="task">Задание 3</div>
-                <div>Вы посетили наш сайт <?= isset($_COOKIE['count'])?$_COOKIE['count']:''?> раз!</div>
+                <div>Вы посетили наш сайт <?= isset($_COOKIE['count']) ? $_COOKIE['count'] : '' ?> раз!</div>
             </div>
         </div>
     </div>
@@ -81,7 +81,6 @@ setcookie('count', $count, time()+3600);
         <div class="wrapperOne">
             <div class="wrapperOne">
                 <div class="task">Задание 1</div>
-
                 <?php
                 echo 'session_destroy();';
                 session_destroy();
@@ -89,7 +88,26 @@ setcookie('count', $count, time()+3600);
             </div>
             <div class="wrapperTree">
                 <div class="task">Задание 3</div>
-                <div>Вы посетили наш сайт <?= isset($_COOKIE['count'])?$_COOKIE['count']:''?> раз!</div>
+                <?php
+                if (isset($_GET['color'])) {
+                    setcookie('colorCoolie', $_GET['color'], time() + 3600 * 24);
+                    $defaultColor = $_GET['color'];
+                } else {
+                    $defaultColor = (isset($_COOKIE['colorCookie'])) ? $_COOKIE['colorCookie'] : '';
+                }
+                ?>
+                <p style="background-color:<?php echo $defaultColor ?>"></p>
+                <form>
+                    Выберите цвет фона <select name="color" style="backdrop-color:<?= $defaultColor ?>">
+                    <?php
+                    $arrayColor = ['#00FA9A', '#48D1CC', '#FFFF00'];
+                    foreach ($arrayColor as $color) {
+                        echo ($color == $defaultColor) ? "<option selected=\"selected\" value=\"$color\" style=\"background-color:$color \"\>$color</option>" : "<option value=\"$color\" style=\"background-color:$color \">$color</option>";
+                    }
+                    ?>
+                    </select>
+                    <input type="submit">
+                </form>
             </div>
         </div>
     </div>
