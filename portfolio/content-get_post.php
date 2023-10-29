@@ -3,7 +3,7 @@
 
 <div class="content">
     <div class="container">
-        <h1 class="slogan">Домашня работа по теме GET/POST</h1>
+        <h1 class="slogan">Домашняя работа по теме GET/POST</h1>
 
         <h2>Слайд №15</h2>
 
@@ -40,7 +40,7 @@
             Отобразите на экране имя анкетируемого, фразу-результат анкетирования.
         </h3>
 
-        <form action="" method="get">
+        <form action="" method="post">
             Имя : <input type="text" name="name" id=""><br>
             Вопрос №1 :<br>
             <input type="radio" checked name="item[0]" id="" value=1>Да <br>
@@ -104,15 +104,15 @@
         </form>
 
         <?php
-            echo "массив GET : ";
-            print_r($_GET);
+            echo "массив POST : ";
+            print_r($_POST);
             echo "<br>";
-            if (isset($_GET["name"])&& isset($_GET["item"])){
+            if (isset($_POST["name"])&& isset($_POST["item"])){
                 // print_r($_GET["item"]);
                 $arrYes = [3,9,10,13,14,19];
                 $arrNo = [1,2,4,5,6,7,8,11,12,15,16,17,18];
                 $sum = 0;
-                foreach($_GET["item"] as $key=>$value){
+                foreach($_POST["item"] as $key=>$value){
                     if((array_search($key+1, $arrYes)!==false)&&($value==1)){
                         $sum++;
                     }

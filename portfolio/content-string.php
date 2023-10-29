@@ -3,7 +3,7 @@
 
 <div class="content">
     <div class="container">
-        <h1 class="slogan">Домашня работа по теме СТРОКИ</h1>
+        <h1 class="slogan">Домашняя работа по теме СТРОКИ</h1>
 
         <h2>Слайд №23</h2>
 

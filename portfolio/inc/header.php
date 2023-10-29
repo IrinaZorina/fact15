@@ -42,6 +42,7 @@
                         <div class="nav-arrays"> <a href="content-arrays.php">Массивы</a></div>
                         <div class="nav-string"> <a href="content-string.php">Строки</a></div>
                         <div class="nav-get_post"> <a href="content-get_post.php">GET/POST</a></div>
+                        <div class="nav-files"> <a href="content-files.php">Работа с файлами</a></div>
                         <div class="nav-fact"> <a href="fact.php">fact</a></div>
                         <div class="nav-bitrix"> <a href="bitrix.php">bitrix</a></div>
 
