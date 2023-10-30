@@ -30,9 +30,9 @@
                 <div><a href="string.php" target="_blank" class="">Строки</a> </div>
                 <div><a href="function.php" target="_blank" class="">Функции</a> </div>
                 <div><a href="get_post.php" target="_blank" class="">GET||POST</a> </div>
-                <div><a href="Registration" target="_blank" class="">Регистрация</a> </div>
-                <div><a href="#" target="_blank" class="">#</a> </div>
-
+                <div><a href="cookie_session.php" target="_blank" class="">COOKIE/SESSION</a></div>
+                <div><a href="files.php" target="_blank" class="">Работа с файлами</a> </div>
+                <div><a href="authorization.php" target="_blank" class="">Авторизация</a> </div>
             </nav>
         </div>
     </header>

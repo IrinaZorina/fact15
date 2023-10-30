@@ -112,7 +112,7 @@
     </p>
     <!-- СоздаЁм форму -->
     <h3>Анкета</h3>
-    <form class="form" action=" " method="post">
+    <form class="" action=" " method="post">
         <input type="text" name="name" placeholder="Введите имя">
         <input type="text" name="family" placeholder="Введите Фамилию">
         <p>1.
