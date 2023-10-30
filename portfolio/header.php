@@ -16,6 +16,8 @@
             <li class="cycle"><a href="arrays.php">МАССИВЫ</a> </li>
             <li class="cycle"><a href="lines.php">СТРОКИ</a> </li>
             <li class="cycle"><a href="getpost.php">GET-POST</a> </li>
+            <li class="cycle"><a href="fact.php">ФАКТ</a> </li>
+            <li class="cycle"><a href="bitrix.php">БИТРИКС</a> </li>
         </ul>
         <a class="button" href="autho.php" style="margin-right: 200px; float: right;">Авторизация</a>
     </div>

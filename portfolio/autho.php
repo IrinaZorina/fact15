@@ -1,3 +1,20 @@
+<?php
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $login = $_POST["login"];
+    $password = $_POST["password"];
+    $hashedPassword = md5($password);
+    if ($login === "admin" && $hashedPassword === md5("qwerty")) {
+        $_SESSION['last_visited_page'] = 'index.php';
+        header("Location: index.php?login=Admin");
+        exit();
+    } else {
+        echo "Неверный логин или пароль. Попробуйте снова.";
+    }
+}
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,16 +37,3 @@
 </form>
 </body>
 </html>
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $login = $_POST["login"];
-    $password = $_POST["password"];
-    $hashedPassword = md5($password);
-    if ($login === "admin" && $hashedPassword === md5("qwerty")) {
-        header("Location: autho2.php");
-        exit();
-    } else {
-        echo "Неверный логин или пароль. Попробуйте снова.";
-    }
-}
-?>

@@ -1,3 +1,16 @@
+<?php
+session_start();
+$lastVisitedPage = isset($_SESSION['last_visited_page']) ? $_SESSION['last_visited_page'] : '';
+
+if ($lastVisitedPage === 'fact.php') {
+    echo 'Последняя посещенная страница - ФАКТ';
+} elseif ($lastVisitedPage === 'bitrix.php') {
+    echo 'Последняя посещенная страница - БИТРИКС';
+} else {
+    echo 'Последняя посещенная страница неизвестна';
+}
+?>
+
 <?php require_once 'header.php'; ?>
 <?php
 function highlightNameAndAge($text) {
