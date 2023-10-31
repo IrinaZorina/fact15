@@ -88,7 +88,7 @@
     <div class="wrapperTwo">
         <div>Задание 6</div>
         <?
-        function maximumTemperature ($array)
+        function maximumTemperature($array)
         {
             foreach ($array as $key => $value) {
                 $max = 0;
@@ -99,7 +99,9 @@
                 }
                 echo "Максимальная температура $key  =   $max  <br/>";
             }
-        };
+        }
+
+        ;
 
         $array = [
             'Июнь' => [
@@ -127,25 +129,69 @@
     </div>
     <div class="wrapperTree">
         <div>Задание 7</div>
-
-    </div>
-</div>
-<div class="wrapper">
-    <h1>Слайд 17</h1>
-    <div class="wrapperOne">
-        <div>Задание 8</div>
         <?php
+        $journal = array();
+        for ($x = 0; $x < 5; $x++) {
+            for ($y = 0; $y < 6; $y++) {
+                $journal[$x][$y] = mt_rand(-100, 100);
+            }
+        }
 
+        $arrMax = $journal[0];
+        echo "
+        <table>";
+        foreach ($journal as $ValCol) {
+            echo "
+            <tr>";
+            foreach ($ValCol as $k => $ValRow) {
+                echo "
+                <td align=right width='50'>" . $ValRow . "</td>
+                ";
+                $arrMax[$k] = ($arrMax[$k] < $ValRow) ? $ValRow : $arrMax[$k];
+            }
+            echo "
+            </tr>
+            ";
+        }
+
+        echo "
+            <tr>";
+        $resultMultiplication = 1;
+        foreach ($arrMax as $key => $value) {
+            echo "
+                <td align=right width='50'>";
+            if (($key - 1) % 2 == 0) {
+                echo $value;
+                $resultMultiplication *= $value;
+            }
+            echo "
+                </td>
+                ";
+        }
+        echo "
+            </tr>
+        </table>
+        ";
+        echo "Произведение максимальных значений четных столбцов = $resultMultiplication";
         ?>
     </div>
-    <div class="wrapperTwo">
-        <div>Задание 9</div>
-        <?
-
-        ?>
-    </div>
-
 </div>
+<!--<div class="wrapper">-->
+<!--    <h1>Слайд 17</h1>-->
+<!--    <div class="wrapperOne">-->
+<!--        <div>Задание 8</div>-->
+<!--        --><?php
+//
+//        ?>
+<!--    </div>-->
+<!--    <div class="wrapperTwo">-->
+<!--        <div>Задание 9</div>-->
+<!--        --><?php
+//
+//        ?>
+<!--    </div>-->
+<!---->
+<!--</div>-->
 
 </body>
 </html>

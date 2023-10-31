@@ -15,13 +15,29 @@
         <div class="wrapperOne">
             <div class="task">Задание 1</div>
             <?php
-            print_r('Вывод input: ' . $_GET['input']);
+            if (isset($_GET['input'])) {
+                print_r('Вывод input: ' . $_GET['input']);
+            } else {
+                echo '';
+            }
             echo '<br>';
-            echo 'Вывод textarea: ' . $_GET['textarea'];
+            if (isset($_GET['textarea'])) {
+                echo 'Вывод textarea: ' . $_GET['textarea'];
+            } else {
+                echo '';
+            }
             echo '<br>';
-            echo 'Вывод radio: ' . $_GET['radio'];
+            if (isset($_GET['radio'])) {
+                echo 'Вывод radio: ' . $_GET['radio'];
+            } else {
+                echo '';
+            }
             echo '<br>';
-            echo 'Вывод checkbox: ' . $_GET['checkbox'];
+            if (isset($_GET['checkbox'])) {
+                echo 'Вывод checkbox: ' . $_GET['checkbox'];
+            } else {
+                echo '';
+            }
             echo '<br>';
             echo '<br>';
             ?>
@@ -50,11 +66,19 @@
             <div class="task">Задание 2</div>
             <?php
             echo '<br>';
-            print_r($_POST['login']);
+            if (isset($_POST['login'])) {
+                print_r($_POST['login']);
+            } else {
+                echo '';
+            }
             echo '<br>';
-            print_r($_POST['password']);
+            if (isset($_POST['password'])) {
+                print_r($_POST['password']);
+            } else {
+                echo '';
+            }
             echo '<br>';
-            $hash_pass = md5($_POST['password']);
+            $hash_pass = isset($_POST['password']) ? md5($_POST['password']) : '';
             $_POST['password'] = $hash_pass;
             echo '<br>';
             print_r($_POST['password']);
@@ -69,27 +93,29 @@
         <div class="wrapperTree">
             <div class="task">Задание 3</div>
             <?php
-                $login = 'admin';
-                $pass = '1';
+            $login = 'admin';
+            $pass = '1';
 
+            if (isset($_POST['login'])) {
                 if ($_POST['login'] == $login && $_POST['password'] === $hash_pass) {
                     echo "Доступ к секретным страницам открыт!";
                 } else {
                     echo 'Данные не верны!';
-                };
+                }
+            }
             ?>
         </div>
         <div class="wrapperTree">
             <div class="task">Задание 4</div>
-                <form method="get">
-                    <select name="I">
-                        <option value="1">Лаб1</option>
-                        <option value="2">Лаб2</option>
-                        <option value="3">Лаб3</option>
-                        <option value="4">Лаб4</option>
-                    </select>
-                    <input type="submit" value="Отправить">
-                </form>
+            <form method="get">
+                <select name="I">
+                    <option value="1">Лаб1</option>
+                    <option value="2">Лаб2</option>
+                    <option value="3">Лаб3</option>
+                    <option value="4">Лаб4</option>
+                </select>
+                <input type="submit" value="Отправить">
+            </form>
         </div>
     </div>
 
@@ -100,11 +126,11 @@
             <form method="POST">
                 <p>Логин:<input type="text" name="login"></p>
                 <p>Комментарии:<input type="text" name="comments"></p>
-                <input type="submit">
+                <input type="submit" value="Отпраить почту">
             </form>
             <?php
-            $login = $_POST['login'];
-            $comments = $_POST['comments'];
+            $login = isset($_POST['login'])?$_POST['login']:'';
+            $comments = isset($_POST['comments'])?$_POST['comments']:'';
 
             $to = '\OpenServer\userdata\temp\email';
             $subject = "Test";
@@ -123,7 +149,6 @@
             <?php
             $password = $_POST['password'];
             $hash_pass1 = md5($password);
-
             ?>
         </div>
         <div class="wrapperTree">

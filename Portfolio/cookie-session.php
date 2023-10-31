@@ -32,7 +32,7 @@ setcookie('count', $count, time() + 3600);
                     <input type="text" name="name" value="<?= isset($_GET['name']) ? $_GET['name'] : '' ?>">
                     <input type="submit">
                 </form>
-                <div>Hello <?= $_COOKIE['name'] ?></div>
+                <div>Hello <?= isset($_COOKIE['name'])?$_COOKIE['name']:'' ?></div>
             </div>
             <div class="wrapperTwo">
                 <div class="task">Задание 2</div>
@@ -96,13 +96,13 @@ setcookie('count', $count, time() + 3600);
                     $defaultColor = (isset($_COOKIE['colorCookie'])) ? $_COOKIE['colorCookie'] : '';
                 }
                 ?>
-                <p style="background-color:<?php echo $defaultColor ?>"></p>
+                <p style="background-color:<?= $defaultColor ?>"></p>
                 <form>
                     Выберите цвет фона <select name="color" style="backdrop-color:<?= $defaultColor ?>">
                     <?php
                     $arrayColor = ['#00FA9A', '#48D1CC', '#FFFF00'];
                     foreach ($arrayColor as $color) {
-                        echo ($color == $defaultColor) ? "<option selected=\"selected\" value=\"$color\" style=\"background-color:$color \"\>$color</option>" : "<option value=\"$color\" style=\"background-color:$color \">$color</option>";
+                        echo ($color == $defaultColor) ? "<option selected=\"selected\" value=\"$color\" style=\"background-color:$color \">$color</option>" : "<option value=\"$color\" style=\"background-color:$color \">$color</option>";
                     }
                     ?>
                     </select>
