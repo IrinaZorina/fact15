@@ -1,4 +1,40 @@
-<? require_once 'globalFunction.php' ?>
+<? require_once 'globalFunction.php';
+// Проверяем и устанавливаем куки
+if (isset($_GET['color'])) {
+    setcookie('color', $_GET['color'], time() + 3600 * 24 * 7);
+}
+// Проверяем условия и меняем цвет подвала
+if (isset($_COOKIE)) {
+    foreach ($_COOKIE as $value) {
+        if ($value == 'green') 
+        {
+            echo "<link rel='stylesheet' href='stylesFooter/styles_green.css'>";
+        } 
+        elseif ($value == 'yellow')
+         {
+            echo "<link rel='stylesheet' href='stylesFooter/styles_yellow.css'>";
+         }
+         elseif ($value == 'blue')
+         {
+            echo  "<link rel='stylesheet' href='stylesFooter/styles_blue.css'>";
+         }
+         elseif ($value == 'red')
+         {
+            echo  "<link rel='stylesheet' href='stylesFooter/styles_red.css'>";
+         }
+         elseif ($value == 'violet')
+         {
+            echo  "<link rel='stylesheet' href='stylesFooter/styles_violet.css'>";
+         }
+         elseif ($value == 'orange')
+         {
+            echo  "<link rel='stylesheet' href='stylesFooter/styles_orange.css'>";
+         }
+
+    }
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +68,7 @@
                 <div><a href="get_post.php" target="_blank" class="">GET||POST</a> </div>
                 <div><a href="cookie_session.php" target="_blank" class="">COOKIE/SESSION</a></div>
                 <div><a href="files.php" target="_blank" class="">Работа с файлами</a> </div>
-                <div><a href="authorization.php" target="_blank" class="">Авторизация</a> </div>
+                <div><a href="authorization/authorization.php" target="_blank" class="">Авторизация</a> </div>
             </nav>
         </div>
     </header>

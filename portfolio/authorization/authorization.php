@@ -10,7 +10,7 @@
 <body style="background-color:#18D8FF";>
     <div style="text-align:center;">
         <h1>Авторизация</h1>
-        <form class="form" action="" method="post">
+        <form class="form" action="test.php" method="post">
             <p>Логин</p><input type="text" name="login" placeholder="Введите свой логин">
             <p>Пароль</p> <input type="password" name="password" placeholder="Введите свой пароль">
             <p>
