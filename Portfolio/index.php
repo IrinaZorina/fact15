@@ -67,7 +67,6 @@ function numberDaysBetweenDates (){
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -133,32 +132,35 @@ function numberDaysBetweenDates (){
             <div class="my-work-experience-company-block">
                 <h4 class="my-work-experience-position">Учебные задания Факт Академия</h4>
                 <a href="controlStructures.php" class="my-work-experience-period">Управляющие констукции (циклы)
-                    <spam class="my-work-experience-divider">|</spam>
+                    <div class="my-work-experience-divider">|</div>
                 </a>
                 <a href="arrays.php" class="my-work-experience-period">Массивы
-                    <spam class="my-work-experience-divider">|</spam>
+                    <div class="my-work-experience-divider">|</div>
                 </a>
                 <a href="string.php" class="my-work-experience-period">Строки
-                    <spam class="my-work-experience-divider">|</spam>
+                    <div class="my-work-experience-divider">|</div>
                 </a>
                 <a href="functions.php" class="my-work-experience-period">Функции
-                    <spam class="my-work-experience-divider">|</spam>
+                    <div class="my-work-experience-divider">|</div>
                 </a>
                 <a href="postget.php" class="my-work-experience-period">Pos, get запросы
-                    <spam class="my-work-experience-divider">|</spam>
+                    <div class="my-work-experience-divider">|</div>
                 </a>
                 <a href="cookie-session.php" class="my-work-experience-period">Cookie, session
-                    <spam class="my-work-experience-divider">|</spam>
+                    <div class="my-work-experience-divider">|</div>
                 </a>
                 <a href="working_files.php" class="my-work-experience-period">Работа с файлами
-                    <spam class="my-work-experience-divider">|</spam>
+                    <div class="my-work-experience-divider">|</div>
+                </a>
+                <a href="index_str.php" class="my-work-experience-period">Задача ООП (Class String)
                 </a>
                 <ul class="my-work-experience-duties">
                     <li class="my-work-experience-duty">Семантически, валидная верска двух проектов (один личный и один
                         камандный проект); при разработке используется адаптивность.
                     </li>
                 </ul>
-                <h1><a href="handler_authorization.php">Авторизация</a></h1></h1>
+                <h1><a href="handler_authorization.php">Авторизация</a></h1>
+                <h1><a href="handler_authorization_database.php">Авторизация БД</a></h1>
                 <div>
                     <p>
                         <?php
@@ -168,9 +170,7 @@ function numberDaysBetweenDates (){
                     </p>
                     <p>
                         <?php
-                        $hobby = 'В этом году начала интересовать языком программирвоания php. Узнал что существует фрейморк
-                        bitrix.';
-                        echo $hobby;
+                        echo $hobby = 'В этом году начала интересовать языком программирвоания php. Узнал что существует фрейморк bitrix.';
                         ?>
                     </p>
                     <p>
@@ -200,17 +200,17 @@ function numberDaysBetweenDates (){
     <!-- Sidebar section -->
 
     <aside class="sidebar-section">
-        <img class="my-photo" src="img/photo1.jpg" loading="lazy " alt="my photo">
+        <img class="my-photo" src="img/photo1.jpg" loading="lazy" alt="my photo">
 
         <!-- Contacts section -->
         <div class="contacts-section">
             <h3 class="sidebar-title">Contacts</h3>
             <div>
-                <spam class="contacts-section-type">T:</spam>
+                <div class="contacts-section-type">T:</div>
                 <a class="contacts-section-type-link" href="tel:+77777777777">+7 909 468 86 60</a>
             </div>
             <div>
-                <spam class="contacts-section-type">E:</spam>
+                <div class="contacts-section-type">E:</div>
                 <a class="contacts-section-type-link"
                    href="mailto:chornyiav@gmail.com">aleksey.filonenko15@yandex.ru</a>
             </div>

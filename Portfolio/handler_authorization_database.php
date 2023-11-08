@@ -3,32 +3,26 @@ session_start();
 $_SESSION['login'] = isset($_POST['login']) ? $_POST['login'] : '';
 $_SESSION['password'] = isset($_POST['password']) ? $_POST['password'] : '';
 
+$localhost = 'localhost';
+$username = 'fact';
+$password = '123';
+$dbname = 'project';
+
+$conn = mysqli_connect($localhost, $username, $password, $dbname);
+mysqli_set_charset($conn, 'UTF8');
+
+$arr = mysqli_fetch_all(mysqli_query($conn, "SELECT * FROM users"), MYSQLI_ASSOC);
+
 $pass_hash = md5($_SESSION['password']);
-$_SESSION['password'] = $pass_hash;
 
-$login = 'Alex';
-$password = '1';
-
-if ($_SESSION['login'] === $login && $_SESSION['password'] === $pass_hash) {
-    header('Location: hello_authorization.php');
-} else {
-    echo 'Введите login и password';
+foreach ($arr as $value) {
+    if ($_SESSION['login'] === $value['login'] && $pass_hash === $value['password']) {
+        echo 'login и password верны!!!';
+    }
 }
 
-//Задание 2
-
-$page = '';
-switch ($_SERVER['PHP_SELF']) {
-    case '/Portfolio/fact.php':
-        $page = 'fact';
-        break;
-    case '/Portfolio/bitrix.php':
-        $page = 'bitrix';
-        break;
-}
-
-if ($page != '') {
-    setcookie('lastPage', $page, time() + 3600 * 24);
+if (!($_SESSION['login'] === $value['login']) && !($pass_hash === $value['password'])) {
+    echo 'не верные login и password !!!';
 }
 
 ?>
@@ -44,12 +38,10 @@ if ($page != '') {
 </head>
 <body>
 <form method="POST">
+    <p>Введите login и password:</p>
     <p>Login: <input type="text" name="login"></p>
     <p>Password: <input type="password" name="password"></p>
     <input type="submit">
 </form>
-<a href="bitrix.php">Bitrix Page</a>
-<?= '<br>' ?>
-<a href="fact.php">Fact Page</a>
 </body>
 </html>
