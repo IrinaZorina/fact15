@@ -2,19 +2,8 @@
 session_start();
 require_once 'Class/Authorization.php';
 
-//$_SESSION['login'] = isset($_POST['login']) ? $_POST['login'] : '';
 $SessionLogin = isset($_POST['login']) ? $_POST['login'] : '';
 $_SESSION['password'] = isset($_POST['password']) ? $_POST['password'] : '';
-
-$localhost = 'localhost';
-$username = 'fact';
-$password = '123';
-$dbname = 'project';
-
-$conn = mysqli_connect($localhost, $username, $password, $dbname);
-mysqli_set_charset($conn, 'UTF8');
-
-$arr = mysqli_fetch_all(mysqli_query($conn, "SELECT * FROM users"), MYSQLI_ASSOC);
 
 $pass_hash = md5($_SESSION['password']);
 

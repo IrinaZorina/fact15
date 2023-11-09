@@ -1,5 +1,13 @@
 <?php
-session_start();
+$localhost = 'localhost';
+$username = 'fact';
+$password = '123';
+$dbname = 'project';
+
+$conn = mysqli_connect($localhost, $username, $password, $dbname);
+mysqli_set_charset($conn, 'UTF8');
+
+$arr = mysqli_fetch_all(mysqli_query($conn, "SELECT * FROM users"), MYSQLI_ASSOC);
 
 class Authorization
 {
