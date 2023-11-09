@@ -161,6 +161,7 @@ function numberDaysBetweenDates (){
                 </ul>
                 <h1><a href="handler_authorization.php">Авторизация</a></h1>
                 <h1><a href="handler_authorization_database.php">Авторизация БД</a></h1>
+                <h1><a href="handler_authorization_oop.php">Авторизация ООП</a></h1>
                 <div>
                     <p>
                         <?php
