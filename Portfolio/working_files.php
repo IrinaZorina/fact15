@@ -49,21 +49,37 @@
             $str2 = fread($str, 25);
 
             $str3 = strstr($str2, ',', true);
-//            while ($str2 != NULL){
-//                if($str2 == ',') strstr($str2, ',');
-//
-//            }
-            echo $str3;
             fclose($str);
+            echo $str3;
             ?>
         </div>
         <div class="wrapperTree">
             <div class="task">Задание 4</div>
+            <?php
+            $oneFile = file_get_contents('1.txt');
+            $str2 = 'Тесет1, Тест1, Тест1. Тест1.';
+            file_put_contents('1.txt', $str2);
+            $tooFile = file_get_contents('2.txt');
+            $str3 = 'В школе идет урок. Класс.';
+            file_put_contents('3.txt', $str3);
 
+            $arr = explode('. ', $str2);
+            $arr2 = explode('. ', $str3);
+            $arr3 = array_merge($arr, $arr2);
+            $arr4 = array_unique($arr3);
+            $str4 = implode('. ', $arr4);
+            $threeFile = file_put_contents('3.txt', $str4);
+            echo "Ответ: в файле 3.txt";
+            ?>
         </div>
         <div class="wrapperTree">
             <div class="task">Задание 5</div>
+            <?php
+            $fooFile = array_intersect($arr, $arr2);
 
+            file_put_contents('test.txt', $fooFile);
+            echo "Ответ: в файле test.txt";
+            ?>
         </div>
     </div>
 </div>
